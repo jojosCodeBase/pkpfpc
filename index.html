@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Boilerplate</title>
+    <title>Homepage | PKPFPC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
@@ -66,21 +66,62 @@
         }
 
         .main-text h1,
-        .main-text h5{
+        .main-text h5 {
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .count{
+        .count {
             font-weight: bold;
             font-size: 50px;
             color: white;
         }
 
-        .count-title{
+        .count-title {
             font-weight: bold;
             font-size: 25px;
             color: white;
+        }
+
+        .main-img {
+            /* background-image: url('images/terrace-farming.jpg'); */
+            /* background-position: center; */
+            /* background-repeat: no-repeat; */
+            /* background-size:contain; */
+        }
+
+        .main-text .btn {
+            width: 25%;
+        }
+
+        @media screen and (max-width: 468px) {
+            .navbar-brand {
+                width: 250px;
+                height: 80px;
+            }
+
+            .main-text h1 {
+                font-size: 16px;
+            }
+
+            .main-text h5 {
+                font-size: 12px;
+                /* margin-top: 10px; */
+            }
+
+            .main-text button {
+                width: 100px;
+                height: 20px;
+            }
+
+            .main-text button span {
+                display: block;
+                text-align: center;
+                font-size: 10px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     </style>
 </head>
@@ -120,36 +161,23 @@
             </div>
         </div>
     </nav>
-
     <div class="main-img" style="position: relative;">
-        <img src="images/terrace-farming.jpg" alt="Background Image" style="width: 100%; height: 100%;" />
-        <div class="d-flex justify-content-center align-items-center vh-100"
+        <img src="images/terrace-farming.jpg" alt="Background Image" style="width: 100%; height: auto;" />
+        <div class="d-flex flex-column justify-content-center align-items-center"
             style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
-            <div class="text-center col-8 text-light main-text">
-                <h1>PARBATIYA KRISHI PRAGATI FARMERS</h1>
-                <h1 style="color: #4BC714">PRODUCER COMPANY LIMITED</h1>
-                <h5>HELPING FARMERS FIGHT AGAINST CLIMATE CHANGE</h5>
-                <button class="btn btn-success">About us</button>
-                <!-- <button class="btn btn-success"> us</button> -->
+            <div class="text-center text-light main-text" style="position: relative; max-width: 80%;">
+                <h1 class="responsive-text">PARBATIYA KRISHI PRAGATI FARMERS</h1>
+                <h1 style="color: #4BC714" class="responsive-text">PRODUCER COMPANY LIMITED</h1>
+                <h5 class="responsive-text">HELPING FARMERS FIGHT AGAINST CLIMATE CHANGE</h5>
+                <button class="btn btn-success"><span>About us</span></button>
             </div>
         </div>
     </div>
-    <!-- about us -->
-    <!-- <div class="container mt-5">
-        <h1>About us</h1>
-        <div class="row">
-            <div class="col">
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam consequatur ab accusamus at? Consequatur, vel tempora perferendis nam, culpa molestias aut, atque dolor quos officiis neque ratione possimus sit praesentium aliquam asperiores! Delectus nesciunt ea quas explicabo mollitia doloribus similique.</span>
-                <p class="mt-3">
-                    <button class="btn btn-success">Read more</button>
-                </p>
-            </div>
-            <div class="col">
-                <img src="images/terrace-farming.jpg" class="image" alt="" srcset="">
-            </div>
-        </div>
-    </div> -->
-    <!-- about us end-->
+
+
+
+
+
 
     <!-- our  programs -->
     <div class="container mt-5">
@@ -203,7 +231,7 @@
         </div>
 
         <div class="button text-center">
-            <a href=""><button class="btn btn-success w-25">View more</button></a>
+            <a href=""><button class="btn btn-success w-lg-25 w-xl-25 w-md-25">View more</button></a>
         </div>
 
     </div>
@@ -212,22 +240,22 @@
     <!-- count section start -->
     <div class="container mt-5 mb-5 bg-success text-center">
         <div class="row p-4">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-5">
                 <div><img src="images/1.png" alt="" srcset=""></div>
                 <div class="count">150</div>
                 <div class="count-title">FARMERS</div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-5">
                 <div><img src="images/2.png" alt="" srcset=""></div>
                 <div class="count">25</div>
                 <div class="count-title">CROPS</div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-5">
                 <div><img src="images/3.png" alt="" srcset=""></div>
                 <div class="count">60</div>
                 <div class="count-title">SHAREHOLDERS</div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-5">
                 <div><img src="images/4.png" alt="" srcset=""></div>
                 <div class="count">22</div>
                 <div class="count-title">DISTRIBUTIONS</div>
@@ -280,42 +308,62 @@
         </div>
 
         <div class="button text-center">
-            <a href=""><button class="btn btn-success w-25">View more</button></a>
+            <a href=""><button class="btn btn-success w-lg-25 w-xl-25 w-md-25">View more</button></a>
         </div>
     </div>
     <!-- our products end -->
 
-    <!-- upcoming events start-->
-        <div class="container mb-5 mt-5">
-            <h1 class="text-center">Upcoming Events</h1>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <th>Sl.no</th>
-                        <th>Description</th>
-                        <th>Venue</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>Annual meeting of shareholders for the year 2023-24</td>
-                            <td>Manjushree Homestay, Bara Mangwa Busty</td>
-                            <td>09-10-2023</td>
-                            <td>02:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Distribution of Nut Saplings</td>
-                            <td>FPC Office, Manjushree Homestay, Bara Mangwa Busty</td>
-                            <td>12-10-2023</td>
-                            <td>10:00 PM - 02:00 PM</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- about us -->
+    <div class="container mt-5">
+        <h1>About us</h1>
+        <div class="row">
+            <div class="col">
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam consequatur ab accusamus at?
+                    Consequatur, vel tempora perferendis nam, culpa molestias aut, atque dolor quos officiis neque
+                    ratione possimus sit praesentium aliquam asperiores! Delectus nesciunt ea quas explicabo mollitia
+                    doloribus similique.</span>
+                <p class="mt-3">
+                    <button class="btn btn-success">Read more</button>
+                </p>
+            </div>
+            <div class="col">
+                <img src="images/terrace-farming.jpg" class="image" style="border-radius: 5px;" alt="" srcset="">
             </div>
         </div>
+    </div>
+    <!-- about us end-->
+
+    <!-- upcoming events start-->
+    <div class="container mb-5 mt-5">
+        <h1 class="text-center">Upcoming Events</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <th>Sl.no</th>
+                    <th>Description</th>
+                    <th>Venue</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Annual meeting of shareholders for the year 2023-24</td>
+                        <td>Manjushree Homestay, Bara Mangwa Busty</td>
+                        <td>09-10-2023</td>
+                        <td>02:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Distribution of Nut Saplings</td>
+                        <td>FPC Office, Manjushree Homestay, Bara Mangwa Busty</td>
+                        <td>12-10-2023</td>
+                        <td>10:00 PM - 02:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <!-- upcoming events end -->
 
     <!-- Footer -->
@@ -363,7 +411,7 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
+                            <i class="fas fa-gem me-3"></i>Parbatiya Krishi Pragati Farmers Producer Company Limited
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -376,26 +424,25 @@
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Products
+                            Quick links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Angular</a>
+                            <a href="#!" class="text-reset">Home</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">React</a>
+                            <a href="#!" class="text-reset">About us</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Vue</a>
+                            <a href="#!" class="text-reset">Memebers</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Laravel</a>
+                            <a href="#!" class="text-reset">Our Products</a>
                         </p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
+                    <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">
                             Useful links
                         </h6>
@@ -411,20 +458,30 @@
                         <p>
                             <a href="#!" class="text-reset">Help</a>
                         </p>
-                    </div>
+                    </div> -->
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fas fa-home me-3"></i>
+                            </div>
+                            <div class="col-11">
+                                <span class="text-start">Ground Floor, Manjushree Homestay, Bara Mangwa Busty, P.O.
+                                    Takling Busty, Rangli Rangliot, Darjeeling - 734312</span>
+                            </div>
+                        </div>
+                        </p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            info@example.com
+                            krishipragatifpc@gmail.com
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <p><i class="fas fa-phone me-3"></i>8967386612 / 8967386612</p>
+                        <!-- <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p> -->
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -436,8 +493,8 @@
         <!-- Copyright -->
         <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> -->
         <div class="text-center p-4 border-top">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Parbatiya Krishi Pragati Farmers Producer Company Limited</a>
         </div>
         <!-- Copyright -->
     </footer>
