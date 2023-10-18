@@ -7,150 +7,36 @@
     <title>Homepage | PKPFPC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        /* .navbar {
-            background-color: #d8db0e;
-        } */
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #f1f1f1;
-        }
-
-        .navbar-brand {
-            font-size: unset;
-            height: 5rem;
-        }
-
-        .navbar-brand img {
-            height: 100%;
-            width: 100%;
-        }
-
-        .navbar {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav-item a {
-            font-weight: bold;
-        }
-
-        .image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .image-box img {
-            width: 350px;
-            height: 300px;
-            /* Set the height of the div */
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            /* Add a border for better visualization */
-            display: flex;
-            /* Use flex display to center content vertically and horizontally */
-            align-items: center;
-            /* Center vertically */
-            justify-content: center;
-            /* Center horizontally */
-            overflow: hidden;
-        }
-
-        .card-text .link {
-            color: black;
-            text-decoration: none;
-        }
-
-        .card-body .link:hover {
-            color: orange;
-        }
-
-        .main-text h1,
-        .main-text h5 {
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .count {
-            font-weight: bold;
-            font-size: 50px;
-            color: white;
-        }
-
-        .count-title {
-            font-weight: bold;
-            font-size: 25px;
-            color: white;
-        }
-
-            
-
-        .main-text .btn {
-            width: 25%;
-        }
-
-        @media screen and (max-width: 468px) {
-            .navbar-brand {
-                width: 250px;
-                height: 80px;
-            }
-
-            .main-text h1 {
-                font-size: 16px;
-            }
-
-            .main-text h5 {
-                font-size: 12px;
-                /* margin-top: 10px; */
-            }
-
-            .main-text button {
-                width: 100px;
-                height: 20px;
-            }
-
-            .main-text button span {
-                display: block;
-                text-align: center;
-                font-size: 10px;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #77e21f;">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="logo.jpg" alt="" srcset=""></a>
+            <a class="navbar-brand" href="index.html"><img src="logo.jpg" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <div class="info text-center">
-                <span>CIN - U01111WB2022PTC259310<br>GSTIN - 19KARTPC45D</span>
-            </div> -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="margin-left: auto;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our products</a>
+                        <a class="nav-link" href="products.html">Our products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Members</a>
+                        <a class="nav-link" href="members.html">Members</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#contact">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -168,11 +54,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 
     <!-- our  programs -->
     <div class="container mt-5">
@@ -457,7 +338,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4" id="contact">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                         <p>
@@ -489,7 +370,8 @@
         <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> -->
         <div class="text-center p-4 border-top">
             © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Parbatiya Krishi Pragati Farmers Producer Company Limited</a>
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Parbatiya Krishi Pragati Farmers Producer
+                Company Limited</a>
         </div>
         <!-- Copyright -->
     </footer>
